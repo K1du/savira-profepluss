@@ -1,0 +1,9 @@
+Django>=4.2
+ djangorestframework
+ django-cors-headers
+ Pillow
+ transformers
+ torch
+ vosk
+ coqui-tts
+djangorestframework-simplejwt

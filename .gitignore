@@ -1,0 +1,38 @@
+# Python/Django
+*.pyc
+__pycache__/
+db.sqlite3
+*.sqlite3
+.env
+*.log
+media/
+staticfiles/
+
+# Node/React
+node_modules/
+build/
+dist/
+.env.local
+.env.development
+.env.production
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode/IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Otros temporales
+*.swp
+*.bak
+*.tmp
+
+# Wireframes y archivos grandes (excepto README)
+/wireframes/*.png
+/wireframes/*.jpg
+!/wireframes/README.md
+
+# No ignorar wireframes/README.md
