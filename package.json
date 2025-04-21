@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/preset-links": "^3.2.0",
+    "@tsparticles/react": "^3.0.0"
+  }
+}

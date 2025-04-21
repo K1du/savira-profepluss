@@ -1,0 +1,134 @@
+body, html, #root, .App {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app-header, .App-header {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: unset !important;
+  padding: 0 !important;
+}
+
+body.dark-mode, html.dark-mode, #root.dark-mode, .App.dark-mode {
+  background: #181928 !important;
+  color: #e0e6f7 !important;
+}
+
+/* Elimina margen superior/franja blanca en cualquier header */
+header, .app-header, .App-header {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background: #f7fafc;
+  color: #222e3a;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+button {
+  background: #1e90d6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.15s;
+}
+button:hover {
+  background: #1769aa;
+}
+
+input {
+  border: 1px solid #e0e6ed;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container, .register-container, .user-panel {
+  background: #fff;
+  max-width: 370px;
+  margin: 2rem auto;
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px 0 rgba(30,144,214,0.09);
+  border: 1px solid #e0e6ed;
+}
+
+h1, h2, h3 {
+  color: #1e90d6;
+  font-family: inherit;
+}
+
+.resumen-box {
+  background: #f5b70011;
+  border-left: 4px solid #f5b700;
+  margin-top: 0.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #222e3a;
+}
+
+.error {
+  color: #f25757;
+  margin-top: 0.5rem;
+}
+.success {
+  color: #1e90d6;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #1e90d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .login-container, .register-container, .user-panel {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}

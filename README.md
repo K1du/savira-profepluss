@@ -52,6 +52,51 @@ ProfePluss es una plataforma educativa moderna, minimalista y multilingüe, dise
 
 ---
 
+## 🚀 Roadmap y Features Estratégicas
+
+### MVP Actual
+- Autenticación JWT, gestión de usuarios y perfiles.
+- Gestión de documentos (subida, listado, borrado, descarga).
+- Panel de usuario, login y registro en React.
+- Estructura preparada para flashcards, quizzes, grupos y chatbot.
+- Branding personalizado (favicon, logo).
+
+### Ideas y Features Futuras
+
+#### 1. Seguimiento Adaptativo de Progreso
+- Ajusta recomendaciones de estudio según progreso, intereses y hábitos del usuario.
+- Registro de interacciones y progreso (PostgreSQL/MongoDB).
+- Algoritmos de recomendación (Collaborative/Content-Based Filtering con Scikit-learn/TensorFlow).
+- Dashboards de progreso y sugerencias (Chart.js/D3.js).
+
+#### 2. Biblioteca Colaborativa
+- Espacio para compartir, comentar y calificar recursos educativos.
+- Búsqueda avanzada (ElasticSearch/PostgreSQL), categorías y etiquetas.
+- Extracción de texto de documentos (PyPDF2/Textract).
+- Edición colaborativa (WebSockets/Redis).
+- Análisis de sentimiento en comentarios (HuggingFace).
+- Control de privacidad de recursos.
+
+#### 3. Buenas Prácticas y Propuestas de Innovación
+- Modularidad y microservicios (Docker).
+- Accesibilidad (WCAG, alto contraste, lectores de pantalla).
+- Optimización de datos (compresión, ElasticSearch).
+- Pruebas automatizadas (CI/CD).
+- Seguridad avanzada (validaciones, MFA).
+- Destacar en el mercado: colaboración grupal, gamificación, multiplataforma.
+
+#### 4. Recursos y Enlaces Útiles
+- Servicios gratuitos para desarrollo: [free-for-dev](https://github.com/ripienaar/free-for-dev)
+- Modelos IA open source: [HuggingFace](https://huggingface.co/models)
+- Herramientas de visualización: [Chart.js](https://www.chartjs.org/), [D3.js](https://d3js.org/)
+- Procesamiento de documentos: [Textract](https://github.com/deanmalmgren/textract), [PyPDF2](https://github.com/py-pdf/pypdf2)
+
+---
+
+> Todas las ideas, features y recursos están documentados y priorizados para facilitar el desarrollo, la colaboración y la innovación continua en ProfePluss.
+
+---
+
 ## Estructura del Proyecto
 
 ```

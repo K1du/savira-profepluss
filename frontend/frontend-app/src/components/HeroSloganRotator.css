@@ -1,0 +1,22 @@
+.slogan-rotator {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e90d6;
+  min-height: 2.5rem;
+  transition: color 0.2s;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+@media (max-width: 600px) {
+  .slogan-rotator {
+    font-size: 1.04rem;
+    min-height: 1.8rem;
+  }
+}

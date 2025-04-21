@@ -1,0 +1,59 @@
+.floating-darkmode-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1002;
+  background: #fff;
+  color: #111;
+  border: 1.2px solid #111;
+  outline: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.12s, color 0.2s;
+  padding: 0;
+}
+.floating-darkmode-btn:hover {
+  background: #f2f2f2;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: scale(1.08);
+}
+.floating-darkmode-btn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floating-darkmode-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.floating-darkmode-btn.dark {
+  background: #111;
+  color: #fff;
+  border-color: #fff;
+}
+.floating-darkmode-btn.dark svg path {
+  fill: #fff;
+}
+.floating-darkmode-btn:not(.dark) svg circle,
+.floating-darkmode-btn:not(.dark) svg g line {
+  stroke: #111;
+}
+@media (max-width: 600px) {
+  .floating-darkmode-btn {
+    bottom: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+  .floating-darkmode-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
