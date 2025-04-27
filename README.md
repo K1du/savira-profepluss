@@ -1,7 +1,7 @@
 # ProfePluss – Plataforma Educativa con IA (MVP)
 
 ## ¿Qué es este proyecto?
-ProfePluss es una plataforma educativa moderna, minimalista y multilingüe, diseñada para facilitar el estudio y la colaboración entre estudiantes, usando inteligencia artificial open source y tecnologías web actuales. Este README contiene el roadmap, la estructura del proyecto y las instrucciones para todos los departamentos implicados.
+ProfePluss es una plataforma educativa moderna, minimalista y multilingüe, diseñada para facilitar el estudio y la colaboración entre estudiantes, usando inteligencia artificial open source y tecnologías web actuales. Esta documentación está en español para usuarios y desarrolladores hispanohablantes.
 
 ---
 
@@ -49,6 +49,54 @@ ProfePluss es una plataforma educativa moderna, minimalista y multilingüe, dise
 - Integración con servicios externos (Google Drive, Dropbox, OneDrive)
 - App móvil (Flutter/React Native)
 - Migración a hosting/producción
+
+---
+
+## Inicio Rápido (Docker Compose)
+
+### 1. Requisitos previos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado y ejecutándose.
+
+### 2. Levantar todos los servicios
+Desde la raíz del proyecto:
+```sh
+docker-compose up --build
+```
+- La primera ejecución puede tardar unos minutos.
+
+### 3. Acceso a la plataforma
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
+
+### 4. Usuarios por defecto
+- **Usuario de prueba:**
+  - Email: `testuser@profepluss.com`
+  - Contraseña: `123456789`
+- **Usuario admin:**
+  - Email: `admin@profepluss.com`
+  - Contraseña: `admin123456`
+
+### 5. Comandos útiles
+- Parar servicios: `docker-compose down`
+- Reconstruir solo backend: `docker-compose build backend`
+
+## Variables de entorno
+- Backend: Ver `backend/profepluss/settings.py` para variables requeridas. Por defecto, todo está configurado para local Docker.
+- Frontend: Usa proxy React para conectar con el backend (`proxy` en `package.json`).
+
+## Funcionalidades principales
+- Registro/login de usuarios (por email)
+- Subida de documentos y resumen con IA
+- Generación de tests tipo opción múltiple
+- Notificaciones en la app y por email
+- Panel de administración (Django)
+
+## Contribuir
+- El desarrollo principal es en español, pero se aceptan PRs/issues en inglés.
+- Abre issues para bugs o nuevas funcionalidades.
+
+## Licencia
+MIT
 
 ---
 
@@ -117,7 +165,6 @@ ProfePluss/
 ├── libros_demo/            # Libros y documentos de prueba
 ├── README.md
 └── ...
-```
 
 ---
 
@@ -175,3 +222,61 @@ Un wireframe es un esquema visual simple de una pantalla de la aplicación. Sirv
 ---
 
 **¡Vamos a crear una plataforma educativa innovadora y accesible para todos!**
+
+---
+
+# Plataforma EdTech: Proceso de Auditoría, Refactorización y Branding Internacional
+
+## 1. Estudio de Mercado y Benchmarking
+- Análisis de más de 40 plataformas EdTech y SaaS internacionales (Coursera, Udemy, Duolingo, Khan Academy, Platzi, Domestika, Skillshare, EdX, FutureLearn, etc.).
+- Identificación de tendencias en naming, branding, posicionamiento y experiencia de usuario.
+- Generación de palabras clave y valores de marca universales.
+
+## 2. Criterios para Naming y Branding
+- Nombres fáciles de pronunciar y recordar en distintos idiomas.
+- Sin connotaciones negativas en los principales idiomas.
+- Dominio .com disponible o alternativa premium.
+- Originalidad y potencial de marca global.
+
+## 3. Proceso de Generación de Nombres
+- Shortlist de más de 20 opciones únicas y memorables.
+- Para cada opción:
+  - Nombre propuesto
+  - Justificación y enfoque
+  - Disponibilidad de dominio
+  - Eslogan/tagline sugerido
+  - Mockup visual (logo y línea visual básica)
+  - Observaciones sobre asociaciones culturales
+
+## 4. Robustez Técnica y Docker
+- Healthchecks y endpoints `/health/` implementados en todos los servicios.
+- Scripts de arranque Docker reforzados: espera inteligente de la base de datos, migraciones automáticas, creación de usuarios de prueba.
+- Test suite backend y frontend ampliado y en ejecución.
+- Mejora de logs y manejo de errores.
+
+## 5. Revamp Visual y UX/UI
+- Layout moderno, paleta premium y tipografía profesional aplicados en las pantallas principales.
+- Onboarding visual y dashboards atractivos en desarrollo.
+- Accesibilidad y experiencia responsive mejoradas.
+
+## 6. Validación y Test Suite
+- Pruebas automáticas y manuales de todos los flujos (login, cursos, IA, administración, subida de documentos, tests, certificaciones, etc.).
+- Checklist de seguridad, SEO y performance en revisión.
+
+## 7. Documentación y Despliegue
+- README y documentación técnica actualizados.
+- Instrucciones de despliegue y uso con Docker Compose.
+- Créditos y licencias de recursos visuales y de código.
+
+## 8. Entrega y Selección de Branding
+- Informe PDF/Markdown con shortlist de nombres, mockups visuales y criterios de selección.
+- Carpeta con recursos visuales y documentación técnica.
+- Plan de integración del nuevo branding en frontend, documentación y recursos visuales.
+
+---
+
+**Avance:**
+- El repositorio está actualizado con los últimos cambios técnicos y de documentación.
+- En breve se entregará el informe completo de branding para selección.
+
+---
