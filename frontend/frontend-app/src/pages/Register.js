@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import GoogleAuthButton from '../components/GoogleAuthButton';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import jwt_decode from 'jwt-decode';
 
 const Register = ({ onRegister }) => {
   const [username, setUsername] = useState('');

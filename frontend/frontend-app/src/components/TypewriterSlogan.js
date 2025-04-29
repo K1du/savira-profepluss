@@ -53,7 +53,7 @@ const TypewriterSlogan = () => {
       setSloganIdx((i) => (i + 1) % slogans.length);
     }
     return () => clearTimeout(timeoutRef.current);
-  }, [charIdx, isDeleting, sloganIdx]);
+  }, [charIdx, isDeleting, sloganIdx, plainSlogans]);
 
   // Render with color highlights and correct line color
   function renderWithHighlights(text) {

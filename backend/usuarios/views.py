@@ -26,10 +26,13 @@ class LoginUsuarioView(APIView):
     def post(self, request):
         serializer = UsuarioLoginSerializer(data=request.data)
         if serializer.is_valid():
-            username = serializer.validated_data['username']
+            email = serializer.validated_data['email']
             password = serializer.validated_data['password']
-            user = authenticate(username=username, password=password)
-            if user is not None:
+            try:
+                user = Usuario.objects.get(email=email)
+            except Usuario.DoesNotExist:
+                return Response({'error': 'Credenciales inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
+            if user.check_password(password):
                 refresh = RefreshToken.for_user(user)
                 return Response({
                     'refresh': str(refresh),

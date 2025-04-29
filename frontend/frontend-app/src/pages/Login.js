@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import GoogleAuthButton from '../components/GoogleAuthButton';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import jwt_decode from 'jwt-decode';
 
 const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
@@ -15,14 +14,14 @@ const Login = ({ onLogin }) => {
       const response = await fetch('http://127.0.0.1:8000/api/login/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
+        body: JSON.stringify({ email, password })
       });
       const data = await response.json();
       if (response.ok && data.access) {
         localStorage.setItem('access_token', data.access);
         onLogin();
       } else {
-        setError(data.detail || 'Credenciales incorrectas');
+        setError(data.detail || data.error || 'Credenciales incorrectas');
       }
     } catch (err) {
       setError('Error de red');
@@ -37,10 +36,10 @@ const Login = ({ onLogin }) => {
       </div>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
-          placeholder="Usuario"
-          value={username}
-          onChange={e => setUsername(e.target.value)}
+          type="email"
+          placeholder="Introduce tu e-mail"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
           required
         />
         <input

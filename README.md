@@ -100,6 +100,30 @@ MIT
 
 ---
 
+## # Branding y modelo de negocio definitivo: Savira
+
+## Precios y planes
+
+| Plan         | Precio mensual | Precio anual (15% descuento) | Funciones incluidas                                           |
+|--------------|---------------|------------------------------|---------------------------------------------------------------|
+| Free         | 0€            | 0€                           | Documentos ilimitados, IA básica, comunidad, onboarding       |
+| Pro          | 19€/mes       | 193€/año (15% dto.)          | Todas las funciones, IA avanzada, exportaciones, analíticas, acceso prioritario, soporte premium |
+
+**Nota:** El pago anual aplica un 15% de descuento sobre el precio mensual (19€ x 12 = 228€, con descuento: 193€).
+
+## Sistema de referidos
+- Cada usuario puede crear un código de referido personalizado (único).
+- Cada invitado que use el código otorga 3€ de crédito al usuario.
+- El crédito puede usarse para funciones Pro o para pagar la suscripción Pro.
+- Si el código ya existe, se muestra un mensaje de error.
+
+## Branding
+- Toda la plataforma, documentación y recursos visuales usan la marca “Savira”.
+- Colores sugeridos: azul premium (#1e90d6), dorado (#f5b700), blanco y gris oscuro.
+- Logo: tipografía sans-serif moderna, símbolo minimalista de "S" estilizada.
+
+---
+
 ## 🚀 Roadmap y Features Estratégicas
 
 ### MVP Actual

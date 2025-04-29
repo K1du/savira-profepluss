@@ -17,7 +17,7 @@ class UsuarioRegistroSerializer(serializers.ModelSerializer):
         return user
 
 class UsuarioLoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
+    email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
 
 class UsuarioPerfilSerializer(serializers.ModelSerializer):
