@@ -1,0 +1,90 @@
+# SAVIRA: Estrategia de Escalabilidad y Estudio de Competencia
+
+## 1. Ideas y Estrategias para Escalabilidad
+
+### A. Producto & Plataforma
+- **Marketplace de recursos**: Permitir a profesores vender/aportar materiales didácticos.
+- **IA personalizada**: Recomendaciones adaptativas de recursos y tests según el progreso del alumno.
+- **Integraciones LMS**: Plugins para Google Classroom, Moodle, Teams, etc.
+- **App móvil nativa**: Android/iOS, notificaciones push, modo offline.
+- **Gamificación**: Logros, rankings, badges para motivar uso continuo.
+- **API pública**: Para que terceros integren Savira en sus sistemas.
+- **Soporte multilingüe avanzado**: Traductor automático de materiales y tests.
+- **Video clases y webinars**: Streaming integrado, grabación y biblioteca de clases.
+- **Panel de analíticas**: Dashboard avanzado para seguimiento de progreso, uso y métricas de engagement.
+- **Sistema de tutorías**: Matching entre alumnos y tutores certificados.
+- **Plataforma B2B**: Licencias para escuelas, academias y empresas.
+- **Microservicios**: Migrar backend a arquitectura de microservicios para mayor escalabilidad.
+- **Infraestructura cloud**: Deploy automático en AWS/GCP/Azure, autoescalado y CI/CD.
+
+### B. Monetización
+- **Marketplace de suscripciones**: Packs premium, bundles familiares, descuentos por volumen.
+- **Publicidad segmentada**: Solo para usuarios free, respetando privacidad.
+- **Certificados oficiales**: Emitir diplomas/certificados con validez académica.
+- **Afiliados y partnerships**: Programas de colaboración con editoriales, universidades, ONGs.
+
+### C. Estrategia de Producto
+- **Roadmap público**: Transparencia y feedback de la comunidad.
+- **Beta testers**: Comunidad de usuarios avanzados para probar nuevas funciones.
+- **Soporte 24/7**: Chatbot IA + atención humana.
+- **Documentación y API abiertas**: Fomentar ecosistema de desarrolladores.
+
+### D. Marketing y Crecimiento
+- **Referral avanzado**: Incentivos escalonados, retos de invitación, ranking de referidos.
+- **Embajadores de marca**: Profesores/influencers educativos.
+- **SEO internacional**: Contenido multilingüe, blog educativo, webinars gratuitos.
+- **Eventos y hackathons**: Para captar talento y visibilidad.
+- **Alianzas estratégicas**: Con instituciones educativas y tecnológicas.
+
+## 2. Estudio Exhaustivo de la Competencia
+
+### Principales Competidores Globales
+1. **Khan Academy**
+   - *Fortalezas*: Contenido gratuito, marca global, IA adaptativa reciente.
+   - *Debilidades*: Menor personalización local, poca interacción social.
+2. **Coursera / Udemy / EdX**
+   - *Fortalezas*: Catálogo gigante, certificaciones, alianzas universitarias.
+   - *Debilidades*: Costes elevados, enfoque en adultos, poca personalización escolar.
+3. **Duolingo** (referencia en gamificación)
+   - *Fortalezas*: Retención por gamificación, micro-lecciones, app móvil top.
+   - *Debilidades*: Limitado a idiomas, no cubre currículum escolar.
+4. **GoConqr / Quizlet**
+   - *Fortalezas*: Herramientas colaborativas, tests y recursos compartidos.
+   - *Debilidades*: Menos IA, menos integración con clases reales.
+5. **Smartick / Matific** (matemáticas)
+   - *Fortalezas*: IA adaptativa, foco en niños, informes para padres.
+   - *Debilidades*: Solo matemáticas, precio elevado.
+6. **ClassDojo / Edmodo**
+   - *Fortalezas*: Comunicación escuela-familia, gestión de aula.
+   - *Debilidades*: No cubren contenido curricular, privacidad.
+
+### Oportunidades para Savira
+- **Personalización local** (currículo español/europeo/latinoamericano).
+- **IA explicativa**: No solo corregir, sino explicar errores y sugerir recursos.
+- **Interacción social segura**: Foros moderados, retos grupales.
+- **Enfoque freemium justo**: Más valor en la capa gratuita vs. competencia.
+- **Integración docente**: Herramientas para crear, compartir y monetizar materiales.
+- **Analítica avanzada**: Informes para padres, docentes y alumnos.
+- **Privacidad y ética**: Transparencia en datos, sin venta de información.
+
+### Amenazas
+- Grandes plataformas con más recursos (Google, Microsoft, Meta).
+- Cambios regulatorios en educación digital.
+- Saturación de apps educativas post-pandemia.
+
+## 3. Resumen Visual de Estrategias
+
+| Área             | Acción/Estrategia Clave                  | Prioridad |
+|------------------|------------------------------------------|-----------|
+| Producto         | Marketplace, IA, microservicios, móvil   | Alta      |
+| Monetización     | Packs, certificados, B2B, afiliados      | Media     |
+| Marketing        | Referral, embajadores, SEO, alianzas     | Alta      |
+| Competencia      | Personalización, privacidad, analítica   | Alta      |
+
+---
+
+Este archivo debe revisarse y actualizarse periódicamente según feedback de usuarios, tendencias de mercado y evolución tecnológica.
+
+---
+
+*Generado por IA para Savira, 2025*

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="60" rx="12" fill="#F7FAFC"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="bold" font-size="36">
+    <text x="60" y="42" fill="#1e90d6">Savira</text>
+  </g>
+  <g>
+    <circle cx="30" cy="30" r="22" fill="#1e90d6"/>
+    <rect x="22" y="22" width="16" height="16" rx="5" fill="#4ad991"/>
+    <circle cx="30" cy="30" r="6" fill="#F7FAFC"/>
+  </g>
+</svg>

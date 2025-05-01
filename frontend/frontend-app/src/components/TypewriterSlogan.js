@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import './TypewriterSlogan.css';
 
 const slogans = [
@@ -8,8 +8,8 @@ const slogans = [
   <span className="typewriter-slogan line-superpoder">Convierte cualquier apunte en tu <span className="color-superpoder">superpoder</span>.</span>,
   <span className="typewriter-slogan line-cool">Aprender nunca fue tan fácil (ni tan pro). <span role="img" aria-label="cool">😎</span></span>,
   <span className="typewriter-slogan line-ia">La <span className="color-ia">IA</span> que convierte tu caos en sobresaliente.</span>,
-  <span className="typewriter-slogan line-genio">Estudia como un <span className="color-genio">genio</span>, no como un robot.</span>,
-  <span className="typewriter-slogan line-ventajas">De apuntes a <span className="color-ventajas">ventajas</span>. De dudas a logros.</span>
+  <span className="typewriter-slogan line-genio">Saca al <span className="color-genio">genio</span> que llevas dentro.</span>,
+  <span className="typewriter-slogan line-ventajas">Ventajas Savira: <span className="color-ventajas">IA</span>, comunidad, recursos y éxito.</span>
 ];
 
 const TYPING_SPEED = 42;
@@ -23,16 +23,16 @@ const TypewriterSlogan = () => {
   const timeoutRef = useRef();
 
   // Convert slogans to plain text for typing effect
-  const plainSlogans = [
+  const plainSlogans = useMemo(() => [
     "Hackea tus estudios.",
     "Domina tus exámenes. 🔥",
     "Estudia menos, aprende más. ⭐",
     "Convierte cualquier apunte en tu superpoder.",
     "Aprender nunca fue tan fácil (ni tan pro). 😎",
     "La IA que convierte tu caos en sobresaliente.",
-    "Estudia como un genio, no como un robot.",
-    "De apuntes a ventajas. De dudas a logros."
-  ];
+    "Saca al genio que llevas dentro.",
+    "Ventajas Savira: IA, comunidad, recursos y éxito."
+  ], []);
 
   useEffect(() => {
     const current = plainSlogans[sloganIdx];
